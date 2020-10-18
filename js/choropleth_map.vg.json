@@ -14,7 +14,7 @@
  "lookup": "properties.NAME",
  "from": {
  "data": {
- "url": "https://raw.githubusercontent.com/shlokthakur1/FIT3179/main/TerrorismAttacks2017.csv"
+ "url": "https://raw.githubusercontent.com/shlokthakur1/FIT3179/main/data/TerrorismAttacks2017.csv"
  },
  "key": "Country",
  "fields": ["TerrorismAttacks"]
