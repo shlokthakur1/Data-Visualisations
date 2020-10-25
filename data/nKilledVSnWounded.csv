@@ -1,0 +1,173 @@
+Country,Total_Killed,Total_Wounded,CountryCode,Region
+Afghanistan,36014,44199,AF,Asia
+Albania,42,126,AL,Europe
+Algeria,10147,9149,DZ,Africa
+Angola,2459,2415,AO,Africa
+Argentina,398,744,AR,Americas
+Armenia,29,71,AM,Asia
+Australia,23,113,AU,Oceania
+Austria,30,126,AT,Europe
+Azerbaijan,256,183,AZ,Asia
+Bahamas,1,0,BS,Americas
+Bahrain,44,189,BH,Asia
+Bangladesh,1212,8013,BD,Asia
+Barbados,76,3,BB,Americas
+Belarus,14,212,BY,Europe
+Belgium,78,505,BE,Europe
+Belize,3,0,BZ,Americas
+Benin,0,8,BJ,Africa
+Bhutan,9,5,BT,Asia
+Bolivia,39,166,BO,Americas
+Botswana,11,11,BW,Africa
+Brazil,199,159,BR,Americas
+Bulgaria,27,35,BG,Europe
+Burkina Faso,117,217,BF,Africa
+Burundi,3724,2445,BI,Africa
+Cambodia,523,763,KH,Asia
+Cameroon,1285,1036,CM,Africa
+Canada,365,146,CA,Americas
+Central African Republic,1106,938,CF,Africa
+Chad,900,1681,TD,Africa
+Chile,226,752,CL,Americas
+China,722,1842,CN,Asia
+Colombia,13493,10274,CO,Americas
+Comoros,1,2,KM,Africa
+Costa Rica,17,38,CR,Americas
+Croatia,248,73,HR,Europe
+Cuba,8,10,CU,Americas
+Cyprus,29,40,CY,Asia
+Czech Republic,6,29,CZ,Europe
+Denmark,5,29,DK,Europe
+Djibouti,274,162,DJ,Africa
+Dominica,3,10,DM,Americas
+Dominican Republic,31,124,DO,Americas
+Ecuador,51,77,EC,Americas
+Egypt,3837,4818,EG,Africa
+El Salvador,11136,5045,SV,Americas
+Equatorial Guinea,2,3,GQ,Africa
+Eritrea,46,62,ER,Africa
+Estonia,3,11,EE,Europe
+Ethiopia,1416,1214,ET,Africa
+Fiji,8,18,FJ,Oceania
+Finland,11,27,FI,Europe
+France,532,2480,FR,Europe
+French Guiana,1,13,GF,Americas
+French Polynesia,0,13,PF,Oceania
+Gabon,6,3,GA,Africa
+Gambia,13,2,GM,Africa
+Georgia,273,392,GE,Asia
+Germany,84,683,DE,Europe
+Ghana,19,13,GH,Africa
+Greece,311,733,GR,Europe
+Grenada,9,21,GD,Americas
+Guadeloupe,8,45,GP,Americas
+Guatemala,4897,1204,GT,Americas
+Guinea,74,57,GN,Africa
+Guyana,36,24,GY,Americas
+Haiti,327,300,HT,Americas
+Honduras,290,236,HN,Americas
+Hong Kong,4,102,HK,Asia
+Hungary,6,17,HU,Europe
+Iceland,0,0,IS,Europe
+India,18258,28850,IN,Asia
+Indonesia,1118,2444,ID,Asia
+Iran,1599,4024,IR,Asia
+Iraq,68369,134613,IQ,Asia
+Ireland,37,29,IE,Europe
+Israel,1609,7817,IL,Asia
+Italy,387,1278,IT,Europe
+Jamaica,32,36,JM,Americas
+Japan,66,6947,JP,Asia
+Jordan,133,260,JO,Asia
+Kazakhstan,39,21,KZ,Asia
+Kenya,1690,6258,KE,Africa
+Kuwait,59,300,KW,Asia
+Kyrgyzstan,10,26,KG,Asia
+Laos,17,63,LA,Asia
+Latvia,2,36,LV,Europe
+Lebanon,3881,10884,LB,Asia
+Lesotho,46,34,LS,Africa
+Liberia,162,36,LR,Africa
+Libya,2200,3307,LY,Africa
+Lithuania,1,2,LT,Europe
+Luxembourg,0,6,LU,Europe
+Macedonia,38,60,MK,Europe
+Madagascar,31,185,MG,Africa
+Malawi,33,0,MW,Africa
+Malaysia,147,101,MY,Asia
+Maldives,20,122,MV,Asia
+Mali,1223,1356,ML,Africa
+Malta,5,12,MT,Europe
+Martinique,0,1,MQ,Americas
+Mauritania,43,28,MR,Africa
+Mauritius,0,1,MU,Africa
+Mexico,737,681,MX,Americas
+Moldova,13,88,MD,Europe
+Montenegro,1,0,ME,Europe
+Morocco,281,200,MA,Africa
+Mozambique,2677,1518,MZ,Africa
+Myanmar,1080,1618,MM,Asia
+Namibia,215,406,NA,Africa
+Nepal,1312,2132,NP,Asia
+Netherlands,35,56,NL,Europe
+New Caledonia,35,23,NC,Oceania
+New Zealand,1,2,NZ,Oceania
+Nicaragua,8719,1718,NI,Americas
+Niger,1338,472,NE,Africa
+Nigeria,11530,10198,NG,Africa
+Norway,79,88,NO,Europe
+Pakistan,22517,41910,PK,Asia
+Panama,38,83,PA,Americas
+Papua New Guinea,79,90,PG,Oceania
+Paraguay,56,69,PY,Americas
+Peru,12197,4049,PE,Americas
+Philippines,9060,13301,PH,Asia
+Poland,9,31,PL,Europe
+Portugal,32,95,PT,Europe
+Qatar,7,13,QA,Asia
+Romania,4,9,RO,Europe
+Russia,3733,7393,RU,Europe
+Rwanda,3235,922,RW,Africa
+Saudi Arabia,533,1666,SA,Asia
+Senegal,325,315,SN,Africa
+Serbia,3,9,RS,Europe
+Seychelles,0,0,SC,Africa
+Sierra Leone,662,122,SL,Africa
+Singapore,5,3,SG,Asia
+Slovenia,1,2,SI,Europe
+Solomon Islands,4,0,SB,Oceania
+Somalia,7869,8851,SO,Africa
+South Africa,2623,4490,ZA,Africa
+South Korea,10,134,KP,Asia
+South Sudan,2074,1323,SS,Africa
+Spain,1264,4871,ES,Europe
+Sri Lanka,14381,15411,LK,Asia
+Sudan,2802,1967,SD,Africa
+Suriname,29,24,SR,Americas
+Sweden,21,80,SE,Europe
+Switzerland,74,94,CH,Europe
+Syria,7578,14036,SY,Asia
+Taiwan,35,87,TW,Asia
+Tajikistan,286,1109,TJ,Asia
+Tanzania,71,232,TZ,Africa
+Thailand,2678,7798,TH,Asia
+Togo,76,34,TG,Africa
+Trinidad and Tobago,6,32,TT,Americas
+Tunisia,329,433,TN,Africa
+Turkey,6796,9898,TR,Asia
+Turkmenistan,3,3,TM,Asia
+Uganda,2553,1145,UG,Africa
+Ukraine,1707,2824,UA,Europe
+United Arab Emirates,123,27,AE,Asia
+United Kingdom,1518,6073,GB,Europe
+United States,3768,20701,US,Americas
+Uruguay,6,6,UY,Americas
+Uzbekistan,68,200,UZ,Asia
+Vanuatu,0,0,VU,Oceania
+Venezuela,227,247,VE,Americas
+Vietnam,1,27,VN,Asia
+Wallis and Futuna,0,0,WF,Oceania
+Western Sahara,1,4,EH,Africa
+Yemen,7011,9277,YE,Asia
+Zambia,70,62,ZM,Africa
+Zimbabwe,154,222,ZW,Africa
