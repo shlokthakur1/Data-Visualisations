@@ -1,13 +1,13 @@
 country_txt,category,value
 Australia,nkill,23
 Australia,nwound,113
-China,nkill,722
-China,nwound,1842
-India,nkill,18258
-India,nwound,28850
-Nigeria,nkill,11530
-Nigeria,nwound,10198
+Indonesia,nkill,1118
+Indonesia,nwound,2444
+Malaysia,nkill,147
+Malaysia,nwound,101
+New Zealand,nkill,1
+New Zealand,nwound,2
+Papua New Guinea,nkill,79
+Papua New Guinea,nwound,90
 Singapore,nkill,5
 Singapore,nwound,3
-United States,nkill,3768
-United States,nwound,20701
