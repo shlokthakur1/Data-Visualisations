@@ -1,0 +1,13 @@
+country_txt,category,value
+Australia,nkill,23
+Australia,nwound,113
+China,nkill,722
+China,nwound,1842
+India,nkill,18258
+India,nwound,28850
+Nigeria,nkill,11530
+Nigeria,nwound,10198
+Singapore,nkill,5
+Singapore,nwound,3
+United States,nkill,3768
+United States,nwound,20701
