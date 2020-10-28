@@ -1,0 +1,28 @@
+category,key,value,position
+Armed Assault,nkill,135393,0
+Armed Assault,nwound,76993,1
+Armed Assault,nevent,38249,2
+Assassination,nkill,23355,0
+Assassination,nwound,13854,1
+Assassination,nevent,17967,2
+Bombing,nkill,142490,0
+Bombing,nwound,371743,1
+Bombing,nevent,82511,2
+Facility,nkill,2582,0
+Facility,nwound,3711,1
+Facility,nevent,9642,2
+Hijacking,nkill,3646,0
+Hijacking,nwound,16996,1
+Hijacking,nevent,589,2
+Barricade,nkill,3525,0
+Barricade,nwound,3940,1
+Barricade,nevent,838,2
+Kidnapping,nkill,14133,0
+Kidnapping,nwound,6134,1
+Kidnapping,nevent,7999,2
+Unarmed Assault,nkill,796,0
+Unarmed Assault,nwound,13995,1
+Unarmed Assault,nevent,916,2
+Unknown,nkill,25354,0
+Unknown,nwound,14252,1
+Unknown,nevent,6106,2
