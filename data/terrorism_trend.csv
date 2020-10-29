@@ -1,10 +1,293 @@
-country_txt,iyear,nevent
-Australia,2015,14
-Australia,2016,9
-Australia,2017,4
-Indonesia,2015,29
-Indonesia,2016,19
-Indonesia,2017,27
-Thailand,2015,278
-Thailand,2016,329
-Thailand,2017,179
+country,year,name,fertility,life_expect
+Australia,1970,Australasia & Oceania,0,1
+Australia,1971,Australasia & Oceania,0,1
+Australia,1972,Australasia & Oceania,1,8
+Australia,1974,Australasia & Oceania,0,1
+Australia,1978,Australasia & Oceania,2,2
+Australia,1979,Australasia & Oceania,0,2
+Australia,1980,Australasia & Oceania,2,4
+Australia,1981,Australasia & Oceania,1,1
+Australia,1982,Australasia & Oceania,0,1
+Australia,1986,Australasia & Oceania,1,2
+Australia,1988,Australasia & Oceania,0,3
+Australia,1989,Australasia & Oceania,0,2
+Australia,1991,Australasia & Oceania,0,4
+Australia,1992,Australasia & Oceania,1,4
+Australia,1994,Australasia & Oceania,3,9
+Australia,1995,Australasia & Oceania,0,5
+Australia,1996,Australasia & Oceania,2,5
+Australia,1997,Australasia & Oceania,0,4
+Australia,1998,Australasia & Oceania,0,6
+Australia,2000,Australasia & Oceania,0,1
+Australia,2001,Australasia & Oceania,0,2
+Australia,2006,Australasia & Oceania,0,2
+Australia,2008,Australasia & Oceania,0,3
+Australia,2009,Australasia & Oceania,0,1
+Australia,2010,Australasia & Oceania,0,1
+Australia,2013,Australasia & Oceania,0,1
+Australia,2014,Australasia & Oceania,4,8
+Australia,2015,Australasia & Oceania,2,14
+Australia,2016,Australasia & Oceania,0,9
+Australia,2017,Australasia & Oceania,4,4
+France,1972,Western Europe,1,11
+France,1973,Western Europe,5,13
+France,1974,Western Europe,3,25
+France,1975,Western Europe,3,29
+France,1976,Western Europe,7,48
+France,1977,Western Europe,3,46
+France,1978,Western Europe,21,52
+France,1979,Western Europe,11,190
+France,1980,Western Europe,20,70
+France,1981,Western Europe,8,51
+France,1982,Western Europe,17,49
+France,1983,Western Europe,20,71
+France,1984,Western Europe,15,133
+France,1985,Western Europe,17,104
+France,1986,Western Europe,25,95
+France,1987,Western Europe,5,86
+France,1988,Western Europe,6,54
+France,1989,Western Europe,3,25
+France,1990,Western Europe,3,30
+France,1991,Western Europe,6,137
+France,1992,Western Europe,9,126
+France,1994,Western Europe,7,96
+France,1995,Western Europe,19,71
+France,1996,Western Europe,18,270
+France,1997,Western Europe,0,130
+France,1998,Western Europe,1,12
+France,1999,Western Europe,0,46
+France,2000,Western Europe,4,28
+France,2001,Western Europe,0,21
+France,2002,Western Europe,0,32
+France,2003,Western Europe,0,34
+France,2004,Western Europe,0,11
+France,2005,Western Europe,0,33
+France,2006,Western Europe,1,34
+France,2007,Western Europe,3,16
+France,2008,Western Europe,0,13
+France,2009,Western Europe,0,9
+France,2010,Western Europe,0,3
+France,2011,Western Europe,0,8
+France,2012,Western Europe,8,66
+France,2013,Western Europe,0,18
+France,2014,Western Europe,1,14
+France,2015,Western Europe,162,37
+France,2016,Western Europe,95,26
+France,2017,Western Europe,7,41
+Indonesia,1977,Southeast Asia,1,1
+Indonesia,1981,Southeast Asia,4,1
+Indonesia,1984,Southeast Asia,2,2
+Indonesia,1985,Southeast Asia,7,2
+Indonesia,1986,Southeast Asia,0,4
+Indonesia,1989,Southeast Asia,85,2
+Indonesia,1990,Southeast Asia,12,3
+Indonesia,1991,Southeast Asia,21,7
+Indonesia,1992,Southeast Asia,33,4
+Indonesia,1994,Southeast Asia,1,5
+Indonesia,1995,Southeast Asia,41,24
+Indonesia,1996,Southeast Asia,30,64
+Indonesia,1997,Southeast Asia,102,27
+Indonesia,1998,Southeast Asia,9,3
+Indonesia,1999,Southeast Asia,67,59
+Indonesia,2000,Southeast Asia,146,101
+Indonesia,2001,Southeast Asia,134,105
+Indonesia,2002,Southeast Asia,246,43
+Indonesia,2003,Southeast Asia,26,18
+Indonesia,2004,Southeast Asia,42,17
+Indonesia,2005,Southeast Asia,66,15
+Indonesia,2006,Southeast Asia,6,10
+Indonesia,2007,Southeast Asia,0,2
+Indonesia,2008,Southeast Asia,0,13
+Indonesia,2009,Southeast Asia,15,19
+Indonesia,2010,Southeast Asia,0,4
+Indonesia,2011,Southeast Asia,20,21
+Indonesia,2012,Southeast Asia,15,39
+Indonesia,2013,Southeast Asia,23,32
+Indonesia,2014,Southeast Asia,20,34
+Indonesia,2015,Southeast Asia,22,29
+Indonesia,2016,Southeast Asia,22,19
+Indonesia,2017,Southeast Asia,20,25
+Iraq,1975,Middle East & North Africa,0,1
+Iraq,1976,Middle East & North Africa,12,3
+Iraq,1979,Middle East & North Africa,1,1
+Iraq,1980,Middle East & North Africa,8,6
+Iraq,1982,Middle East & North Africa,96,2
+Iraq,1983,Middle East & North Africa,1,2
+Iraq,1984,Middle East & North Africa,0,2
+Iraq,1987,Middle East & North Africa,0,3
+Iraq,1988,Middle East & North Africa,43,4
+Iraq,1989,Middle East & North Africa,0,3
+Iraq,1991,Middle East & North Africa,1,3
+Iraq,1992,Middle East & North Africa,117,35
+Iraq,1994,Middle East & North Africa,75,10
+Iraq,1995,Middle East & North Africa,156,17
+Iraq,1996,Middle East & North Africa,11,12
+Iraq,1997,Middle East & North Africa,106,20
+Iraq,1998,Middle East & North Africa,19,7
+Iraq,1999,Middle East & North Africa,32,12
+Iraq,2000,Middle East & North Africa,10,9
+Iraq,2001,Middle East & North Africa,9,3
+Iraq,2002,Middle East & North Africa,10,5
+Iraq,2003,Middle East & North Africa,391,96
+Iraq,2004,Middle East & North Africa,2171,315
+Iraq,2005,Middle East & North Africa,3384,608
+Iraq,2006,Middle East & North Africa,4616,805
+Iraq,2007,Middle East & North Africa,6667,1042
+Iraq,2008,Middle East & North Africa,2864,1097
+Iraq,2009,Middle East & North Africa,2585,1134
+Iraq,2010,Middle East & North Africa,2074,1179
+Iraq,2011,Middle East & North Africa,1870,1304
+Iraq,2012,Middle East & North Africa,2686,1422
+Iraq,2013,Middle East & North Africa,7041,2812
+Iraq,2014,Middle East & North Africa,13965,3768
+Iraq,2015,Middle East & North Africa,8885,2635
+Iraq,2016,Middle East & North Africa,12207,3201
+Iraq,2017,Middle East & North Africa,6476,2333
+Israel,1971,Middle East & North Africa,1,1
+Israel,1972,Middle East & North Africa,26,15
+Israel,1973,Middle East & North Africa,2,1
+Israel,1974,Middle East & North Africa,78,12
+Israel,1975,Middle East & North Africa,24,2
+Israel,1976,Middle East & North Africa,1,2
+Israel,1977,Middle East & North Africa,5,6
+Israel,1978,Middle East & North Africa,52,21
+Israel,1979,Middle East & North Africa,64,106
+Israel,1980,Middle East & North Africa,14,60
+Israel,1981,Middle East & North Africa,3,28
+Israel,1982,Middle East & North Africa,3,46
+Israel,1983,Middle East & North Africa,16,21
+Israel,1984,Middle East & North Africa,7,24
+Israel,1985,Middle East & North Africa,12,20
+Israel,1986,Middle East & North Africa,8,39
+Israel,1987,Middle East & North Africa,11,23
+Israel,1988,Middle East & North Africa,13,35
+Israel,1989,Middle East & North Africa,43,78
+Israel,1990,Middle East & North Africa,57,98
+Israel,1991,Middle East & North Africa,31,64
+Israel,1992,Middle East & North Africa,38,78
+Israel,1994,Middle East & North Africa,60,48
+Israel,1995,Middle East & North Africa,18,13
+Israel,1996,Middle East & North Africa,73,19
+Israel,1997,Middle East & North Africa,31,13
+Israel,1998,Middle East & North Africa,19,13
+Israel,1999,Middle East & North Africa,6,8
+Israel,2000,Middle East & North Africa,11,15
+Israel,2001,Middle East & North Africa,141,78
+Israel,2002,Middle East & North Africa,337,75
+Israel,2003,Middle East & North Africa,156,38
+Israel,2004,Middle East & North Africa,59,19
+Israel,2005,Middle East & North Africa,45,43
+Israel,2006,Middle East & North Africa,57,76
+Israel,2007,Middle East & North Africa,17,48
+Israel,2008,Middle East & North Africa,34,107
+Israel,2009,Middle East & North Africa,1,36
+Israel,2010,Middle East & North Africa,4,14
+Israel,2011,Middle East & North Africa,21,51
+Israel,2012,Middle East & North Africa,14,65
+Israel,2013,Middle East & North Africa,2,37
+Israel,2014,Middle East & North Africa,49,293
+Israel,2015,Middle East & North Africa,20,58
+Israel,2016,Middle East & North Africa,16,50
+Israel,2017,Middle East & North Africa,3,32
+Malaysia,1973,Southeast Asia,0,1
+Malaysia,1975,Southeast Asia,0,2
+Malaysia,1977,Southeast Asia,100,2
+Malaysia,1979,Southeast Asia,5,1
+Malaysia,1983,Southeast Asia,0,1
+Malaysia,1986,Southeast Asia,20,15
+Malaysia,1988,Southeast Asia,9,4
+Malaysia,1989,Southeast Asia,0,2
+Malaysia,1990,Southeast Asia,0,3
+Malaysia,1991,Southeast Asia,0,3
+Malaysia,1992,Southeast Asia,0,2
+Malaysia,2000,Southeast Asia,2,3
+Malaysia,2001,Southeast Asia,0,1
+Malaysia,2008,Southeast Asia,0,2
+Malaysia,2009,Southeast Asia,0,1
+Malaysia,2012,Southeast Asia,2,2
+Malaysia,2013,Southeast Asia,2,13
+Malaysia,2014,Southeast Asia,1,11
+Malaysia,2015,Southeast Asia,1,5
+Malaysia,2016,Southeast Asia,6,15
+Malaysia,2017,Southeast Asia,4,3
+New Caledonia,1984,Australasia & Oceania,11,10
+New Caledonia,1985,Australasia & Oceania,0,7
+New Caledonia,1986,Australasia & Oceania,0,2
+New Caledonia,1988,Australasia & Oceania,22,9
+New Caledonia,1989,Australasia & Oceania,2,1
+New Caledonia,1992,Australasia & Oceania,0,2
+New Zealand,1973,Australasia & Oceania,0,1
+New Zealand,1981,Australasia & Oceania,0,2
+New Zealand,1984,Australasia & Oceania,1,1
+New Zealand,1991,Australasia & Oceania,0,1
+New Zealand,1994,Australasia & Oceania,0,1
+New Zealand,1996,Australasia & Oceania,0,2
+New Zealand,1997,Australasia & Oceania,0,1
+New Zealand,2001,Australasia & Oceania,0,1
+New Zealand,2003,Australasia & Oceania,0,3
+New Zealand,2008,Australasia & Oceania,0,5
+New Zealand,2014,Australasia & Oceania,0,1
+New Zealand,2016,Australasia & Oceania,0,1
+Papua New Guinea,1989,Australasia & Oceania,13,24
+Papua New Guinea,1990,Australasia & Oceania,12,18
+Papua New Guinea,1991,Australasia & Oceania,3,2
+Papua New Guinea,1992,Australasia & Oceania,7,10
+Papua New Guinea,1994,Australasia & Oceania,17,3
+Papua New Guinea,1995,Australasia & Oceania,6,8
+Papua New Guinea,1996,Australasia & Oceania,21,10
+Papua New Guinea,1997,Australasia & Oceania,0,2
+Papua New Guinea,2007,Australasia & Oceania,0,1
+Papua New Guinea,2017,Australasia & Oceania,0,8
+Singapore,1974,Southeast Asia,0,1
+Singapore,1985,Southeast Asia,0,1
+Singapore,1987,Southeast Asia,0,2
+Singapore,1991,Southeast Asia,4,1
+Singapore,1992,Southeast Asia,0,1
+Singapore,1994,Southeast Asia,1,1
+Thailand,1972,Southeast Asia,0,1
+Thailand,1974,Southeast Asia,2,1
+Thailand,1977,Southeast Asia,1,3
+Thailand,1978,Southeast Asia,29,5
+Thailand,1979,Southeast Asia,62,16
+Thailand,1980,Southeast Asia,75,22
+Thailand,1981,Southeast Asia,21,16
+Thailand,1982,Southeast Asia,1,2
+Thailand,1983,Southeast Asia,0,1
+Thailand,1985,Southeast Asia,0,1
+Thailand,1986,Southeast Asia,0,3
+Thailand,1988,Southeast Asia,10,5
+Thailand,1989,Southeast Asia,35,16
+Thailand,1990,Southeast Asia,22,10
+Thailand,1991,Southeast Asia,11,8
+Thailand,1992,Southeast Asia,39,25
+Thailand,1994,Southeast Asia,17,24
+Thailand,1995,Southeast Asia,19,12
+Thailand,1996,Southeast Asia,10,19
+Thailand,1997,Southeast Asia,18,20
+Thailand,1998,Southeast Asia,4,4
+Thailand,1999,Southeast Asia,0,3
+Thailand,2000,Southeast Asia,7,3
+Thailand,2001,Southeast Asia,11,14
+Thailand,2002,Southeast Asia,16,12
+Thailand,2003,Southeast Asia,6,6
+Thailand,2004,Southeast Asia,32,44
+Thailand,2005,Southeast Asia,130,155
+Thailand,2006,Southeast Asia,194,202
+Thailand,2007,Southeast Asia,264,293
+Thailand,2008,Southeast Asia,166,198
+Thailand,2009,Southeast Asia,270,298
+Thailand,2010,Southeast Asia,154,253
+Thailand,2011,Southeast Asia,152,182
+Thailand,2012,Southeast Asia,209,279
+Thailand,2013,Southeast Asia,255,472
+Thailand,2014,Southeast Asia,192,423
+Thailand,2015,Southeast Asia,116,278
+Thailand,2016,Southeast Asia,120,329
+Thailand,2017,Southeast Asia,72,178
+Vietnam,1992,Southeast Asia,0,1
+Vietnam,1994,Southeast Asia,0,1
+Vietnam,1995,Southeast Asia,0,1
+Vietnam,1996,Southeast Asia,0,1
+Vietnam,1997,Southeast Asia,1,2
+Vietnam,2001,Southeast Asia,0,4
+Vietnam,2017,Southeast Asia,0,2
