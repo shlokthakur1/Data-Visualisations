@@ -1,208 +1,203 @@
-Country,TerrorismAttacks
-Afghanistan,12731
-Albania,80
-Algeria,2743
-Andorra,1
-Angola,499
-Antigua and Barbuda,1
-Argentina,815
-Armenia,24
-Australia,114
-Austria,115
-Azerbaijan,49
-Bahamas,5
-Bahrain,207
-Bangladesh,1648
-Barbados,3
-Belarus,13
-Belgium,154
-Belize,8
-Benin,8
-Bhutan,6
-Bolivia,314
-Bosnia-Herzegovina,159
-Botswana,10
-Brazil,273
-Brunei,6
-Bulgaria,52
-Burkina Faso,52
-Burundi,613
-Cambodia,259
-Cameroon,332
-Canada,96
-Central African Rep.,283
-Chad,91
-Chile,2365
-China,252
-Colombia,8306
-Comoros,5
-Costa Rica,67
-Croatia,57
-Cuba,30
-Cyprus,132
-Czech Republic,32
-Czechoslovakia,10
-Democratic Republic of the Congo,775
-Denmark,41
-Djibouti,22
-Dominica,3
-Dominican Republic,90
-East Germany (GDR),38
-East Timor,10
-Ecuador,220
-Egypt,2479
-El Salvador,5320
-Equatorial Guinea,2
-Eritrea,10
-Estonia,16
-Ethiopia,190
-Falkland Islands,1
-Fiji,17
-Finland,20
-France,2693
-French Guiana,7
-French Polynesia,3
-Gabon,8
-Gambia,3
-Georgia,217
-Germany,735
-Ghana,19
-Greece,1275
-Grenada,5
-Guadeloupe,56
-Guatemala,2050
-Guinea,25
-Guinea-Bissau,9
-Guyana,26
-Haiti,213
-Honduras,323
-Hong Kong,26
-Hungary,46
-Iceland,4
-India,11960
-Indonesia,761
-International,1
-Iran,684
-Iraq,24636
-Ireland,307
-Israel,2183
-Italy,1565
-Ivory Coast,74
-Jamaica,36
-Japan,402
-Jordan,113
-Kazakhstan,27
-Kenya,683
-Kosovo,196
-Kuwait,76
-Kyrgyzstan,35
-Laos,27
-Latvia,17
-Lebanon,2478
-Lesotho,29
-Liberia,34
-Libya,2249
-Lithuania,8
-Luxembourg,16
-Macau,33
-Macedonia,118
-Madagascar,27
-Malawi,5
-Malaysia,99
-Maldives,22
-Mali,566
-Malta,23
-Martinique,12
-Mauritania,18
-Mauritius,2
-Mexico,524
-Moldova,21
-Montenegro,5
-Morocco,36
-Mozambique,363
-Myanmar,546
-Namibia,151
-Nepal,1215
-Netherlands,130
-New Caledonia,31
-New Hebrides,1
-New Zealand,20
-Nicaragua,1970
-Niger,154
-Nigeria,3907
-North Korea,1
-North Yemen,6
-Norway,19
-Pakistan,14368
-Panama,127
-Papua New Guinea,89
-Paraguay,114
-People's Republic of the Congo,4
-Peru,6096
-Philippines,6908
-Poland,39
-Portugal,140
-Qatar,7
-Republic of the Congo,36
-Rhodesia,83
-Romania,6
-Russia,2194
-Rwanda,159
-Saudi Arabia,371
-Senegal,118
-Serbia,12
-Serbia-Montenegro,11
-Seychelles,2
-Sierra Leone,101
-Singapore,7
-Slovak Republic,18
-Slovenia,6
-Solomon Islands,4
-Somalia,4142
-South Africa,2016
-South Korea,38
-S. Sudan,225
-South Vietnam,1
-South Yemen,2
-Soviet Union,78
-Spain,3249
-Sri Lanka,3022
-St. Kitts and Nevis,2
-St. Lucia,1
-Sudan,967
-Suriname,66
-Swaziland,16
-Sweden,132
-Switzerland,111
-Syria,2201
-Taiwan,50
-Tajikistan,188
-Tanzania,59
-Thailand,3849
-Togo,48
-Trinidad and Tobago,22
-Tunisia,109
-Turkey,4292
-Turkmenistan,2
-Uganda,394
-Ukraine,1709
-United Arab Emirates,22
-United Kingdom,5235
-United States,2836
-Uruguay,82
-Uzbekistan,21
-Vanuatu,2
-Vatican City,1
-Venezuela,293
-Vietnam,12
-Wallis and Futuna,1
-West Bank and Gaza Strip,2227
-West Germany (FRG),541
-Western Sahara,5
-Yemen,3347
-Yugoslavia,203
-Zaire,50
-Zambia,62
-Zimbabwe,101
-Mongolia,0
-Congo,0
+Country,TerrorismAttacks,nkill,nwound
+Afghanistan,11952,36014,44199
+Albania,76,42,126
+Algeria,2629,10147,9149
+Angola,458,2459,2415
+Argentina,734,398,744
+Armenia,23,29,71
+Australia,110,23,113
+Austria,110,30,126
+Azerbaijan,45,256,183
+Bahamas,5,1,0
+Bahrain,204,44,189
+Bangladesh,1605,1212,8013
+Barbados,3,76,3
+Belarus,12,14,212
+Belgium,145,78,505
+Belize,8,3,0
+Benin,7,0,8
+Bhutan,5,9,5
+Bolivia,280,39,166
+Bosnia-Herzegovina,155,78,147
+Botswana,8,11,11
+Brazil,252,199,159
+Brunei,6,0,1
+Bulgaria,49,27,35
+Burkina Faso,48,117,217
+Burundi,570,3724,2445
+Cambodia,243,523,763
+Cameroon,258,1285,1036
+Canada,95,365,146
+Central African Republic,219,1106,938
+Chad,75,900,1681
+Chile,1949,226,752
+China,239,722,1842
+Colombia,7697,13493,10274
+Comoros,5,1,2
+Costa Rica,54,17,38
+Croatia,57,248,73
+Cuba,30,8,10
+Cyprus,129,29,40
+Czech Republic,32,6,29
+Czechoslovakia,10,27,23
+Democratic Republic of the Congo,569,2854,1349
+Denmark,39,5,29
+Djibouti,20,274,162
+Dominica,2,3,10
+Dominican Republic,88,31,124
+East Germany (GDR),24,2,37
+East Timor,9,5,7
+Ecuador,205,51,77
+Egypt,2428,3837,4818
+El Salvador,3890,11136,5045
+Equatorial Guinea,2,2,3
+Eritrea,9,46,62
+Estonia,16,3,11
+Ethiopia,165,1416,1214
+Fiji,17,8,18
+Finland,19,11,27
+France,2502,532,2480
+French Guiana,5,1,13
+French Polynesia,3,0,13
+Gabon,8,6,3
+Gambia,3,13,2
+Georgia,214,273,392
+Germany,735,84,683
+Ghana,19,19,13
+Greece,1247,311,733
+Grenada,5,9,21
+Guadeloupe,45,8,45
+Guatemala,1686,4897,1204
+Guinea,20,74,57
+Guinea-Bissau,8,16,27
+Guyana,25,36,24
+Haiti,210,327,300
+Honduras,290,290,236
+Hong Kong,26,4,102
+Hungary,46,6,17
+Iceland,4,0,0
+India,11490,18258,28850
+Indonesia,728,1118,2444
+International,1,1,12
+Iran,570,1599,4024
+Iraq,23306,68369,134613
+Ireland,257,37,29
+Israel,1998,1609,7817
+Italy,1457,387,1278
+Ivory Coast,66,231,169
+Jamaica,33,32,36
+Japan,373,66,6947
+Jordan,109,133,260
+Kazakhstan,27,39,21
+Kenya,635,1690,6258
+Kosovo,185,82,365
+Kuwait,73,59,300
+Kyrgyzstan,34,10,26
+Laos,25,17,63
+Latvia,16,2,36
+Lebanon,2243,3881,10884
+Lesotho,27,46,34
+Liberia,28,162,36
+Libya,1930,2200,3307
+Lithuania,8,1,2
+Luxembourg,16,0,6
+Macau,32,1,46
+Macedonia,114,38,60
+Madagascar,27,31,185
+Malawi,5,33,0
+Malaysia,91,147,101
+Maldives,21,20,122
+Mali,497,1223,1356
+Malta,23,5,12
+Martinique,8,0,1
+Mauritania,15,43,28
+Mauritius,2,0,1
+Mexico,495,737,681
+Moldova,21,13,88
+Montenegro,5,1,0
+Morocco,32,281,200
+Mozambique,341,2677,1518
+Myanmar,479,1080,1618
+Namibia,140,215,406
+Nepal,1151,1312,2132
+Netherlands,124,35,56
+New Caledonia,31,35,23
+New Hebrides,1,0,0
+New Zealand,20,1,2
+Nicaragua,1337,8719,1718
+Niger,137,1338,472
+Nigeria,2894,11530,10198
+North Korea,1,3,4
+North Yemen,6,3,1
+Norway,19,79,88
+Pakistan,13871,22517,41910
+Panama,124,38,83
+Papua New Guinea,84,79,90
+Paraguay,111,56,69
+People's Republic of the Congo,3,15,0
+Peru,5385,12197,4049
+Philippines,6585,9060,13301
+Poland,38,9,31
+Portugal,123,32,95
+Qatar,7,7,13
+Republic of the Congo,21,47,54
+Rhodesia,64,161,151
+Romania,6,4,9
+Russia,2119,3733,7393
+Rwanda,157,3235,922
+Saudi Arabia,335,533,1666
+Senegal,115,325,315
+Serbia,12,3,9
+Serbia-Montenegro,11,3,5
+Seychelles,2,0,0
+Sierra Leone,87,662,122
+Singapore,7,5,3
+Slovak Republic,18,7,11
+Slovenia,6,1,2
+Solomon Islands,4,4,0
+Somalia,3115,7869,8851
+South Africa,1924,2623,4490
+South Korea,35,10,134
+South Sudan,173,2074,1323
+South Vietnam,1,81,0
+South Yemen,2,0,2
+Soviet Union,77,96,150
+Spain,2942,1264,4871
+Sri Lanka,2892,14381,15411
+St. Kitts and Nevis,2,0,9
+St. Lucia,1,2,12
+Sudan,714,2802,1967
+Suriname,66,29,24
+Swaziland,15,6,3
+Sweden,128,21,80
+Switzerland,100,74,94
+Syria,1598,7578,14036
+Taiwan,49,35,87
+Tajikistan,186,286,1109
+Tanzania,54,71,232
+Thailand,3807,2678,7798
+Togo,48,76,34
+Trinidad and Tobago,20,6,32
+Tunisia,106,329,433
+Turkey,4132,6796,9898
+Turkmenistan,2,3,3
+Uganda,346,2553,1145
+Ukraine,1573,1707,2824
+United Arab Emirates,20,123,27
+United Kingdom,3509,1518,6073
+United States,2742,3768,20701
+Uruguay,78,6,6
+Uzbekistan,21,68,200
+Vanuatu,2,0,0
+Vatican City,1,0,3
+Venezuela,276,227,247
+Vietnam,12,1,27
+Wallis and Futuna,1,0,0
+West Bank and Gaza Strip,2100,1449,2887
+West Germany (FRG),441,79,859
+Western Sahara,4,1,4
+Yemen,2916,7011,9277
+Yugoslavia,191,115,276
+Zaire,48,296,211
+Zambia,60,70,62
+Zimbabwe,94,154,222
