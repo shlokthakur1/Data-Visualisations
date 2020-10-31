@@ -1,0 +1,71 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "background": "lightgoldenrodyellow",
+
+    "width": "700",
+    "data": {
+        "url": "https://raw.githubusercontent.com/shlokthakur1/FIT3179/main/data/terrorism_ts.csv",
+        "format": {
+            "type": "csv"
+        }
+    },
+    "encoding": {
+        "x": {
+            "field": "iyear",
+            "title": "Year"
+        },
+        "y": {
+            "field": "nevent",
+            "type": "quantitative",
+            "title": "Number of Terrorist Attacks"
+        },
+        "tooltip":[
+            {"field":"iyear","type":"nominal","title":"Year"},
+            {"field":"nevent","type":"nominal","title":"Number of Terrorist Events"}
+        ]
+    },
+    "layer": [{
+        "selection": {
+            "brush": {
+                "type": "interval",
+                "encodings": ["x"]
+            }
+        },
+        "mark": "area"
+  }, {
+        "transform": [
+            {
+                "filter": {
+                    "selection": "brush"
+                }
+            }
+    ],
+        "mark": {
+            "type": "area",
+            "color": "#472d7b"
+        }
+  },
+  {"mark":{
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "dx": 0,
+                "fontSize": 11.5,
+                "fontStyle": "italic"
+            },
+        "encoding": {
+            "text":{
+                "field": "iyear"
+            },
+            "opacity": {
+                    "condition": {
+                        "test": "datum['iyear'] == '2014' || datum['iyear'] =='2001'",
+                        "value": 1
+                    },
+                    "value": 0
+                }
+        }
+    
+  
+  }]
+}

@@ -1,28 +1,28 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 800,
-  "height": 600,
-  "title": "Terrorist Attacks",
-  "data": {
-    "url": "https://raw.githubusercontent.com/shlokthakur1/FIT3179/main/data/nKilledVSnWounded.csv"
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "background":"lightgoldenrodyellow",
+    "width": "container",
+    "height": 400,
+    "data": {
+        "url": "https://raw.githubusercontent.com/shlokthakur1/FIT3179/main/data/nKilledVSnWounded.csv"
+    },
+    "params": [
+        {
+            "name": "Population_Above",
+            "value": 0,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 100000000,
+                "step": 1000000,
+                "name": "Minimum Population: "
+            }
   },
-  "params": [
-    {
-  "name": "Population_Above",
-  "value": 0,
-  "bind": {
-  "input": "range",
-  "min": 0,
-  "max": 100000000,
-  "step": 1000000,
-  "name": "Minimum Population: "
-  }
-  },
-    {
-    "name": "Continent_selection",
-    "bind": {
-    "input": "select",
-    "options": [
+        {
+            "name": "Continent_selection",
+            "bind": {
+                "input": "select",
+                "options": [
       null,
     "Americas",
     "Europe",
@@ -30,7 +30,7 @@
     "Asia",
     "Oceania"
     ],
-    "labels":[
+                "labels": [
     "Show All",
     "Americas",
     "Europe",
@@ -38,108 +38,155 @@
     "Asia",
     "Oceania"
     ],
-    "name": "Continent Selection: "
-      }
+                "name": "Continent Selection: "
+            }
     }
   ],
-  "transform": [
-    {"filter": "datum.Total_Killed > 0"},
-    {"filter": "datum.Total_Wounded > 0"},
-    {"filter": "datum.Population > Population_Above"},
-    {"calculate": "datum.Total_Killed/datum.Population * 100000", 
-    "as": "Deaths per 100,000 Population"},
-    {"filter": "Continent_selection == null || datum.Region == Continent_selection"}
+    "transform": [
+        {
+            "filter": "datum.Total_Killed > 0"
+        },
+        {
+            "filter": "datum.Total_Wounded > 0"
+        },
+        {
+            "filter": "datum.Population > Population_Above"
+        },
+        {
+            "calculate": "datum.Total_Killed/datum.Population * 100000",
+            "as": "Deaths per 100,000 Population"
+        },
+        {
+            "filter": "Continent_selection == null || datum.Region == Continent_selection"
+        }
  ],
 
- "encoding": {
-    "x": {
-      "field": "Total_Killed",
-      "type": "quantitative",
-      "title": "Total People Killed",
-      "axis": {"tickCount": 5},
-      "scale": {"type": "log", "domain": [1, 100000]}
-    },
-    "y":{
-      "field": "Total_Wounded",
-      "type": "quantitative",
-      "title": "Total People Wounded",
-      "axis": {"tickCount": 5},
-      "scale": {"type": "log", "domain": [1, 1000000]}
-    }
- },
- "layer": [
-   {
-    "selection": {
-    "continent_highlight": {
-    "type": "multi",
-    "fields": ["Region"],
-    "bind": "legend"}
-      },
-   "mark" : "circle",
-   "encoding": {
-     "size":{
-      "field": "Population",
-      "type": "quantitative",
-      "scale": {
-      "type": "threshold",
-      "domain": [1000000, 10000000, 50000000, 100000000,500000000],
-      "range": [10, 50, 150, 200, 300, 400]
-      },
-      "legend": {"format": ".1s"}
-      
-    },
-    "color": {
-      "field": "Region",
-      "type": "nominal",
-      "scale": {
-        "domain": [
-          "Americas",
-          "Europe",
-          "Asia",
-          "Oceania",
-          "Africa"
-        ],
-        "range": [
-          "#e41a1c",
-          "#984ea3",
-          "#ff7f00",
-          "#a65628",
-          "#377eb8"
-        ]
-      }
-    },
-    "opacity": {
-      "condition": {"selection": "continent_highlight", "value": 0.6},
-      "value": 0.2
-    },
-    "tooltip": [
-      {"field": "Country", "type": "nominal"},
-      {"field": "Total_Killed", "type": "quantitative", "format": ","},
-      {"field": "Total_Wounded", "type": "quantitative", "format": ","},
-      {
-      "field": "Deaths per 100,000 Population",
-      "type": "quantitative",
-      "format": ".2f"
-      }]
-    }
-   },
-   {
-     "mark": {
-        "type": "text",
-        "align": "right",
-        "baseline": "middle",
-        "dx": -12,
-        "fontSize": 11.5,
-        "fontStyle": "italic"},
     "encoding": {
-        "text": {"field": "Country", "type": "nominal"},
-        "color": {"value": "black"},
-        "opacity": {
-          "condition": {
-          "test": "datum['Country'] == 'China' || datum['Country'] =='Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||datum['Country'] == 'United States'",
-          "value": 1},
-          "value": 0}
-              }
+        "x": {
+            "field": "Total_Killed",
+            "type": "quantitative",
+            "title": "Total People Killed",
+            "axis": {
+                "tickCount": 5
+            },
+            "scale": {
+                "type": "log",
+                "domain": [1, 100000]
+            }
+        },
+        "y": {
+            "field": "Total_Wounded",
+            "type": "quantitative",
+            "title": "Total People Wounded",
+            "axis": {
+                "tickCount": 5
+            },
+            "scale": {
+                "type": "log",
+                "domain": [1, 1000000]
+            }
+        }
+    },
+    "layer": [
+        {
+            "selection": {
+                "continent_highlight": {
+                    "type": "multi",
+                    "fields": ["Region"],
+                    "bind": "legend"
+                }
+            },
+            "mark": "circle",
+            "encoding": {
+                "size": {
+                    "field": "Population",
+                    "type": "quantitative",
+                    "scale": {
+                        "type": "threshold",
+                        "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
+                        "range": [10, 50, 150, 200, 300, 400]
+                    },
+                    "legend": {
+                        "format": ".1s"
+                    }
+
+                },
+                "color": {
+                    "field": "Region",
+                    "type": "nominal",
+                    "title": "Continent",
+                    "scale": {
+                        "domain": ["Americas","Europe","Asia","Oceania","Africa"],
+                        "range": [
+                            
+        "#472d7b",
+          "#2c728e",
+          "#abdc32",
+          "#eb5a46",
+          "orange"
+        ]
+                    }
+                },
+                "opacity": {
+                    "condition": {
+                        "selection": "continent_highlight",
+                        "value": 0.6
+                    },
+                    "value": 0.2
+                },
+                "tooltip": [
+                    {
+                        "field": "Country",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Total_Killed",
+                        "type": "quantitative",
+                        "format": ","
+                    },
+                    {
+                        "field": "Total_Wounded",
+                        "type": "quantitative",
+                        "format": ","
+                    },
+                    {
+                        "field": "Population",
+                        "type": "quantitative",
+                        "format": ","
+                    },
+                    {
+                        "field": "Deaths per 100,000 Population",
+                        "type": "quantitative",
+                        "format": ".2f"
+                    }
+                    ]
+            }
+   },
+        {
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "dx": -12,
+                "fontSize": 11.5,
+                "fontStyle": "italic"
+            },
+            "encoding": {
+                "text": {
+                    "field": "Country",
+                    "type": "nominal"
+                },
+                "color": {
+                    "value": "black"
+                },
+                "opacity": {
+                    "condition": {
+                        "test": "datum['Country'] == 'Japan' || datum['Country'] =='Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'Iraq' || datum['Country'] == 'Vietname' ||datum['Country'] == 'United States'",
+                        "value": 1
+                    },
+                    "value": 0
+                }
+            }
             }
         ]
 }

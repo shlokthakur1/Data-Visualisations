@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "An interactive histogram for visualizing a univariate distribution.",
+  "width": 750,
+  "height": 100,
+  "padding": 5,
+
+  "signals": [
+    { "name": "binOffset", "value": 0,
+      "bind": {"input": "range", "min": 0, "max": 1000} },
+    { "name": "binStep", "value": 0,
+      "bind": {"input": "range", "min": 0, "max": 10000, "step": 10} }
+  ],
+
+  "data": [
+    {
+      "name": "points",
+      "url": "https://raw.githubusercontent.com/shlokthakur1/FIT3179/main/data/terrorism_hist.csv",
+      "format": {"type":"csv"}
+    },
+    {
+      "name": "binned",
+      "source": "points",
+      "transform": [
+        {
+          "type": "bin", "field": "nevent",
+          "extent": [0, 35000],
+          "anchor": {"signal": "binOffset"},
+          "step": {"signal": "binStep"},
+          "nice": false
+        },
+        {
+          "type": "aggregate",
+          "key": "bin0", "groupby": ["bin0", "bin1"],
+          "fields": ["bin0"], "ops": ["count"], "as": ["count"]
+        }
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "xscale",
+      "type": "linear",
+      "range": "width",
+      "domain": [0,35000]
+    },
+    {
+      "name": "yscale",
+      "type": "linear",
+      "range": "height", "round": true,
+      "domain": {"data": "binned", "field": "count"},
+      "zero": true, "nice": true
+    }
+  ],
+
+  "axes": [
+    {"orient": "bottom", "scale": "xscale", "zindex": 1},
+    {"orient": "left", "scale": "yscale", "tickCount": 5, "zindex": 1}
+  ],
+
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data": "binned"},
+      "encode": {
+        "update": {
+          "x": {"scale": "xscale", "field": "bin0"},
+          "x2": {"scale": "xscale", "field": "bin1",
+                 "offset": {"signal": "binStep > 10 ? 0.5 : 0"}},
+          "y": {"scale": "yscale", "field": "count"},
+          "y2": {"scale": "yscale", "value": 0},
+          "fill": {"value": "#21918d"}
+        },
+        "hover": { "fill": {"value": "firebrick"} }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {"data": "points"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": "nevent"},
+          "width": {"value": 1},
+          "y": {"value": 25, "offset": {"signal": "height"}},
+          "height": {"value": 5},
+          "fill": {"value": "#21918d"},
+          "fillOpacity": {"value": 0.4}
+        }
+      }
+    }
+  ]
+}
