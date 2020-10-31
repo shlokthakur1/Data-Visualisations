@@ -1,41 +1,271 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
-  <!-- Import vega-embed -->
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-  
+    <title>Multiple Visualisations | An Example</title>
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+    <!-- Import vega-embed -->
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- custom style -->
+    <style>
+        * {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        h1 {
+            font-weight: 900;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        .page {
+            width: 850px;
+            background-color: lightgoldenrodyellow;
+            margin: auto;
+            padding: 50px;
+            padding-top: 35px;
+        }
+
+        .vis-container {
+            width: 100%;
+        }
+
+        .description h2,
+        h1 {
+            margin-top: 0px;
+        }
+
+        .description-right {
+            padding-left: 20px;
+        }
+
+        .description-left {
+            padding-right: 20px;
+        }
+
+        .description-top {
+            padding-top: 20px;
+        }
+
+        .pure-g {
+            margin-bottom: 25px;
+        }
+
+        .small-font {
+            font-size: 14px;
+        }
+    </style>
 </head>
-    
+
 <body>
 
-<h1>An Example of Multiple Visualisations</h1>
+    <div class="page">
 
-<h2>This is the first visualisation</h2>
-<div id="choropleth_map"></div>
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <h1>Exploring Terrorism</h1>
+                <p>This page visualizes and describes the story of terrorism. It highlights a number of key factors and examines relationships in depth. Data gathered from a government body located in USA.</p>
+            </div>
+        </div>
+        <!-- end pure grid group -->
 
-<h2>This is the second visualisation</h2>
-<div id="scatter_plot"></div>
+        <!-- pure grid group TIMESERIES-->
+        <div class="pure-g">
 
-<script type="text/javascript">
-  
-  var vis1 = "js/choropleth_map.vg.json";
-  
-  vegaEmbed('#choropleth_map', vis1).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-  var vis2 = "js/scatter_plot_interactive.vg.json";
-  
-  vegaEmbed('#scatter_plot', vis2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+            <div class="pure-u-5-6">
+                <div class="description description-top">
+                    <h2>Terrorist Attacks over Time</h2>
+                    <p>From the time series area chart below we can see that over time the trend of terrorist attacks is upwards. I would say that there seems to be almost a cyclical pattern forming but would need to wait for future data to confirm this structure. </p>
+                    <p>I've annotated the point 2001 as that marks the infamous 9/11 attack that devastated the world globally. It's interesting to note that the few years after 2001, attacks spiked upwards, perhaps as a result of this event. I've also annotated 2014 which marks the highest activity of terrorist attacks, and the infamous Lindt Cafe Siege in Sydney. I remember that holiday season I was living in Sydney and there was genuine fear as most people assumed we were safe from such attacks.</p>
+                </div>
+            </div>
 
+            <div class="pure-u-2-3">
+                <div id="vis7" class="vis-container"></div>
+            </div>
+
+
+        </div>
+        <!-- end pure grid group -->
+
+        <!-- pure grid group HISTOGRAM-->
+        <div class="pure-g">
+
+            <div class="pure-u-5-6">
+                <div class="description description-top">
+                    <h2>Number of Attacks Distribution</h2>
+                    <p>Below is an interactive histogram that allows users to deeply analyze the distribution of Terrorist Attacks globally. The distribution of up to approx 500 attacks is quite close, however countries are wide apart for high number of attacks.</p>
+                </div>
+            </div>
+
+            <div class="pure-u-2-3">
+                <div id="vis6" class="vis-container"></div>
+            </div>
+
+
+
+        </div>
+        <!-- end pure grid group -->
+
+        <!-- pure grid group CHOROPLETH MAP-->
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+                <div class="description description-left">
+                    <h2>Map of Terrorist Attacks</h2>
+                    <p>On the right we have a choropleth map of countries globally, colour coded by the number of terrorist attacks that country has experienced. It's nice to notice that Australia is on the lower end of the scale however alarming just North, Indonesia is on the higher end. Geographically, Australia is surrounded by other islands like itself, and an assumption can be made from this map that islands are less likely to experience terrorist attacks than inland countries.</p> <p>I don't think any assumption can be made about which regions experience more attacks as it seems to be relatively dangerous countries in every region (perhaps Asia is more prone). </p>
+                </div>
+            </div>
+            <div class="pure-u-2-3">
+                <div id="vis1" class="vis-container"></div>
+            </div>
+        </div>
+        <!-- end pure grid group -->
+
+
+        <!-- pure grid group BUBBLE CHART-->
+        <div class="pure-g">
+            <div class="pure-u-2-3">
+                <div id="vis2" class="vis-container"></div>
+            </div>
+            <div class="pure-u-1-3">
+                <div class="description description-right">
+                    <h2>Relationship between #Killed and #Wounded</h2>
+                    <p>This bubble chart displays the relationship between number of people killed against number of people wounded from terrorist attacks. There is an apparent strong positive linear relationship.</p>
+                    <p>Singapore: has experience very low people killed and wounded, a tribute to their national defense.</p>
+                    <p>Japan and United States both have similar populations, however Japan and significantly better at defending against such attacks, even though US is renowned for their military force funding</p>
+                    <p> Iraq: a country that has come out the worst in the world due to terrorism, with it's small population and such high death + wounded rate must be concerning and addressed.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- end pure grid group -->
+
+
+        <!-- pure grid group RADAR CHART-->
+        <div class="pure-g">
+
+
+            <div class="pure-u-1-3">
+                <div class="description description-left">
+                    <h2>Australia and Surrounding Countries</h2>
+                    <p>On the visualization on the right, we can compare Australia between other countries in a close proximity to Australia. This allows us to compare Australia to other countries in the Oceania continent and analyze how safe it is, relatively</p>
+                    <p>As suspected, Australia does have a higher number of wounded people then number of people killed, as a result of terrorist attacks. Comparatively, Australia isn't as safe as it's surrounding countries. A country often compared to Australia, New Zealand is much safer in terms of both kills and wounded (with 1 and 2 respectively). Australia has had 23 people killed as a result of terrorist attacks and 113 wounded. </p>
+                    <p>Malaysia, surprisingly has had more people killed then wounded. This is very alarming as if a terrorist attack where to happen, a person would be more likely to die then be wounded statistically.</p>
+                </div>
+            </div>
+
+            <div class="pure-u-2-3">
+                <div id="vis4" class="vis-container" style="text_align: center;"></div>
+            </div>
+
+        </div>
+        <!-- end pure grid group -->
+
+        <!-- pure grid group WORDCLOUD-->
+        <div class="pure-g" style="text_align: center;">
+
+            <div class="pure-u-5-6">
+                <div class="description description-top">
+                    <h2>Word Cloud of Terrorist Reports in 1970s USA</h2>
+                    <p>I thought with the social justice revolution taking place globally, having originated from USA, it would be interesting to see the language used in reports written about the terrorist attacks in USA during the 1970s.</p>
+                    <p>It's interesting to note that words such as "Black" and "African" are used in relation to terrorism so often. This is reflective of the racial discrimination that is still apparent in USA against African Americans. </p>
+                    <p>Some interesting words that intrigued me was "school" and "panther". School shootings are still terrorist attacks that occur frequently in USA today. I researched why panther was mentioned and to my surprise it was in relation to the now famous superhero Black Panther. The Black Panther Party was a famous racial justice  group that was often accused of terrorist attack (which was false). It's interesting to note that the US government has still recorded these acts of terrorism. </p>
+                </div>
+            </div>
+
+            <div class="pure-u-2-3">
+                <div id="vis5" class="vis-container"></div>
+            </div>
+
+        </div>
+        <!-- end pure grid group -->
+
+        <!-- pure grid group HEATMAP -->
+        <div class="pure-g">
+
+
+            <div class="pure-u-5-6">
+                <div class="description description-top">
+                    <h2>Attack Type and Target Type Relationship</h2>
+                    <p>Below is a heatmap showcasing the relationship between different attack types and the number of people killed for a given target type. Blank values represent no relationship has happened.</p>
+                    <p> Bombing private citizens and property has proven to be the deadliest attack and target type combination globally. I investigated this type combination and found a number of cases that occurred in Iraq where bombs where hidden in cars or shopping centers which resulted in killing a large number of private (innocent) citizens. This explains the above report on Iraq suffering from a high number of people killed even with such a small population. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="pure-u-2-3">
+                <div id="vis3" class="vis-container"></div>
+            </div>
+
+
+        </div>
+        <!-- end pure grid group -->
+
+    </div> <!-- end page -->
+
+    <script type="text/javascript">
+        var specVis1 = "./js/choropleth_map.vg.json";
+        var specVis2 = "./js/scatter_plot_interactive.vg.json";
+        var specVis3 = "./js/heatmap.vg.json";
+        var specVis4 = "./js/radar.vg.json";
+        var specVis5 = "./js/wordcloud.vg.json";
+        var specVis6 = "./js/interactive_hist.vg.json";
+        var specVis7 = "./js/timeseries.vg.json";
+
+        vegaEmbed('#vis1', specVis1, {
+            "actions": false
+        }).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis2', specVis2, {
+            "actions": false
+        }).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis3', specVis3, {
+            "actions": false
+        }).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis4', specVis4, {
+            "actions": false
+        }).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis5', specVis5, {
+            "actions": false
+        }).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis6', specVis6, {
+            "actions": false
+        }).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis7', specVis7, {
+            "actions": false
+        }).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    </script>
 </body>
+
 </html>
