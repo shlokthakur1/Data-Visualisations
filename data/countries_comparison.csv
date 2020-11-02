@@ -1,13 +1,13 @@
 country_txt,category,value
-Australia,NumberKilled,23
-Australia,NumberWounded,113
-Malaysia,NumberKilled,147
-Malaysia,NumberWounded,101
-New Caledonia,NumberKilled,35
-New Caledonia,NumberWounded,23
-New Zealand,NumberKilled,1
-New Zealand,NumberWounded,2
-Papua New Guinea,NumberKilled,79
-Papua New Guinea,NumberWounded,90
-Singapore,NumberKilled,5
-Singapore,NumberWounded,3
+Australia,Number of People Killed,23
+Australia,Number of People Wounded,113
+Malaysia,Number of People Killed,147
+Malaysia,Number of People Wounded,101
+New Caledonia,Number of People Killed,35
+New Caledonia,Number of People Wounded,23
+New Zealand,Number of People Killed,1
+New Zealand,Number of People Wounded,2
+Papua New Guinea,Number of People Killed,79
+Papua New Guinea,Number of People Wounded,90
+Singapore,Number of People Killed,5
+Singapore,Number of People Wounded,3
