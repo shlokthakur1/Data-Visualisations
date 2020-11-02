@@ -268,7 +268,11 @@
             }
     }
   ],
-    "legends": [{"fill": "color", "orient": "top", "title": "Measure:"}]
+    "legends": [{"fill": "color", "orient": "right", "title": "Measure:"}],
 
-
+"config": {
+      "legend": {
+        "offset": -750
+      }
+    }
 }
